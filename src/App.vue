@@ -1,35 +1,30 @@
 <template>
-  <div id="app">
-    <BackgroundImage :levelId="levelId" :image="node.image">
-      <h1>Level {{levelId}}</h1>
-      <h1>Node {{nodeId}}</h1>
-    </BackgroundImage>
-    <v-bottom-sheet v-model="sheet" inset hide-overlay>
-      <v-sheet class="text-center" height="200px">
-        <h1>{{node.text}}</h1>
-        <br>
-        <v-btn
-          v-for="(action, index) in node.actions"
-          :key="index"
-          @click="goTo(action.goToLevel, action.goToNode)"
-        >{{action.text}}</v-btn>
-      </v-sheet>
-    </v-bottom-sheet>
-  </div>
+  <v-app>
+    <v-app-bar color="primary" dark fixed app>
+      <v-toolbar-title>One Pair of Clean Pants</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-title>Level {{levelId}}, Node {{nodeId}}</v-toolbar-title>
+    </v-app-bar>
+    <v-content>
+      <BackgroundImage :levelId="levelId" :image="node.image"></BackgroundImage>
+      <Controls :node="node" @goTo="goTo"></Controls>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
 import BackgroundImage from "@/components/BackgroundImage.vue";
+import Controls from "@/components/Controls.vue";
 import level1 from "@/levels/1.js";
 import level2 from "@/levels/2.js";
 
 export default {
   components: {
-    BackgroundImage
+    BackgroundImage,
+    Controls,
   },
   data() {
     return {
-      sheet: true,
       levels: [],
       levelId: 1,
       nodeId: 1
@@ -52,13 +47,9 @@ export default {
     goTo(levelId, nodeId) {
       if (levelId) this.levelId = levelId;
       if (nodeId) this.nodeId = nodeId;
+      this.typing = true;
     }
   }
 };
 </script>
-<style>
-body {
-  background: #ddd;
-}
-</style>
 
