@@ -1,6 +1,6 @@
 export default {
     level: {
-        id: 1,
+        id: 2,
         nodes: [{
                 id: 1,
                 text: "Hello, welcome to level 2!",
@@ -25,7 +25,7 @@ export default {
                 }]
             },
             {
-                id: 2,
+                id: 3,
                 text: "Aww damn, you've already beat the game",
                 image: "pants.png",
                 timed: false,

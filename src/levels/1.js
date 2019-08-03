@@ -25,7 +25,7 @@ export default {
                 }]
             },
             {
-                id: 2,
+                id: 3,
                 text: "Aww damn, you've already beat the level",
                 image: "pants.png",
                 timed: false,
