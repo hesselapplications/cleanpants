@@ -162,7 +162,7 @@ export default {
             goToNode: 17
           }
         ]
-      }
+      },
       {
         id: 12,
         text: "You grab a slice of pizza and sit down to eat. As your eating you get some sauce on your hands. Eric your buddy comes past and notices you on the couch. He gives you a high five.",
