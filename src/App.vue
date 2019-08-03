@@ -6,7 +6,7 @@
       <v-toolbar-title>Level {{levelId}}, Node {{nodeId}}</v-toolbar-title>
     </v-app-bar>
     <v-content>
-      <BackgroundImage :levelId="levelId" :image="node.image"></BackgroundImage>
+      <BackgroundImage :levelId="levelId" :nodeId="nodeId" :image="node.image"></BackgroundImage>
       <Controls :node="node" @goTo="goTo"></Controls>
     </v-content>
   </v-app>
@@ -26,8 +26,8 @@ export default {
   data() {
     return {
       levels: [],
-      levelId: 2,
-      nodeId: 48
+      levelId: 1,
+      nodeId: 1
     };
   },
   computed: {
