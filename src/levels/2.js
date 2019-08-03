@@ -5,7 +5,7 @@ export default {
       {
         id: 1,
         text:
-          "Hello, welcome to level 2! Ready to go on a first date????You are meeting the girl of your dreams tonight at your local fancy restaraunt - Beau Pantalon.But you have only one pair of clean pants!!!! Make sure to keep your pants clean as you head to your date!",
+          "Hello, welcome to level 2! Ready to go on a first date? You are meeting the girl of your dreams tonight at your local fancy restaraunt - Beau Pantalon. But you have only one pair of clean pants!!!! Make sure to keep your pants clean as you head to your date!",
         image: "pants.png",
         timed: false,
         actions: [
@@ -27,7 +27,8 @@ export default {
             goToNode: 4
           },
           {
-            text: "Single bag and two hand carry it for support ",
+            text:
+              "Single bag and two hand carry it close to your body for support ",
             goToNode: 3
           }
         ]
@@ -104,7 +105,7 @@ export default {
       {
         id: 7,
         text:
-          "That's right, it's just one can, who cares???? You turn to go wash your hands inside when a car full of environmental protectionists see's what you have done! Appalled, they shout out \"For Mother Earth\" and start hurdling organic tomatoes at you!",
+          "That's right, it's just one can, who cares? You turn to go wash your hands inside when a car full of environmental protectionists see's what you have done! Appalled, they shout out \"For Mother Earth\" and start hurdling organic tomatoes at you!",
         image: "pants.png",
         timed: true,
         actions: [
@@ -759,7 +760,7 @@ export default {
       {
         id: 50,
         text:
-          "She accepts your compliment and blushes a little, as you sit down though... you realize you've made a grave mistake... not grave... gravey - you sat in a misplaced gravy bowl... ruining your pants",
+          "She accepts your compliment and blushes a little, as you sit down though... you realize you've made a grave mistake... not grave... gravy - you sat in a misplaced gravy bowl... ruining your pants",
         image: "pants.png",
         timed: false,
         actions: [
@@ -772,7 +773,7 @@ export default {
       {
         id: 51,
         text:
-          "You check your seat for anything. Lucky you did, too, because you find as misplaced gravey bowl sitting there... you move it aside and sit down. She is very impressed by the way you take care of your pants.",
+          "You check your seat for anything. Lucky you did, too, because you find as misplaced gravy bowl sitting there... you move it aside and sit down. She is very impressed by the way you take care of your pants.",
         image: "pants.png",
         timed: false,
         actions: [
