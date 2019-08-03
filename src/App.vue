@@ -6,6 +6,19 @@
       <v-toolbar-title>Level {{levelId}}, Node {{nodeId}}</v-toolbar-title>
     </v-app-bar>
     <v-content>
+      <v-container>
+        <v-layout>
+          <h4>Social Acceptibility Bar</h4>
+        </v-layout>
+        <v-layout>
+          <v-flex xs10>
+            <v-progress-linear color="light-blue" height="50" :value="socAccBar" striped></v-progress-linear>
+          </v-flex>
+          <v-flex xs2>
+            <v-img :src="require('@/assets/levels/1/pants.png')" height="50"></v-img>
+          </v-flex>
+        </v-layout>
+      </v-container>
       <BackgroundImage :levelId="levelId" :image="node.image"></BackgroundImage>
       <Controls :node="node" @goTo="goTo"></Controls>
     </v-content>
@@ -21,14 +34,24 @@ import level2 from "@/levels/2.js";
 export default {
   components: {
     BackgroundImage,
-    Controls,
+    Controls
   },
   data() {
     return {
       levels: [],
-      levelId: 2,
-      nodeId: 48
+      levelId: 1,
+      nodeId: 1,
+      socAccBar: 100
     };
+  },
+  watch: {
+    levelId: function() {
+      this.socAccBar = 100;
+    },
+    nodeId: function() {
+      console.log(this.node.socAccImpact);
+      this.socAccBar += this.node.socAccImpact;
+    }
   },
   computed: {
     level() {

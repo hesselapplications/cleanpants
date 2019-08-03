@@ -77,7 +77,7 @@ export default {
       setTimeout(() => {
         self.$refs[index][0].$el.click();
         self.randomSelection = null;
-      }, 1000)
+      }, 1000);
     }
   }
 };
