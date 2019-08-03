@@ -68,6 +68,13 @@ export default {
       if (this.node.timed) {
         this.timer = 100;
 
+<<<<<<< HEAD
+      var self = this;
+      setTimeout(() => {
+        self.$refs[index][0].$el.click();
+        self.randomSelection = null;
+      }, 1000);
+=======
         var self = this;
         this.timeout = setTimeout(() => {
           var actions = self.node.actions;
@@ -80,6 +87,7 @@ export default {
           }, 1000);
         }, 4000);
       }
+>>>>>>> master
     }
   }
 };

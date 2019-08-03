@@ -7,6 +7,7 @@ export default {
         text:
           "It's a friday night and you know what that means. It's time to go out to Patty Nicepants house party. As you are getting ready you realize, you only have one clean pair of pants!",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Get Ready",
@@ -18,6 +19,7 @@ export default {
         id: 2,
         text:
           "Your Uber is on the way do you want to be the lame guy in the corner or the life of the party?",
+        socAccImpact: 0,
         timed: true,
         actions: [
           {
@@ -35,6 +37,7 @@ export default {
         text:
           "You decide to take two shots of vodka before you head out, but you realize your uber is waiting. You run out to catch your ride and trip on the curb like a clutz.",
         timed: false,
+        socAccImpact: -25,
         actions: [
           {
             text: "Arrive at the party",
@@ -47,6 +50,7 @@ export default {
         text:
           "You head out front of your apartment and wait for Tim your uber driver. He pulls up shortly. As you get in he says, 'Damn, those are some clean pants'.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Arrive at the party",
@@ -59,6 +63,7 @@ export default {
         text:
           "You pull up to to Patty Nicepants house and realize the party has been going on for awhile. You hear lots of laughter from the back, but there is also a bunch of people on the front porch.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Go out back",
@@ -75,6 +80,7 @@ export default {
         text:
           "You head out back and see Patty. She starts eyeing up your clean pants and comes over. 'Hey do you want to play some beer pong with me?'",
         timed: true,
+        socAccImpact: 0,
         actions: [
           {
             text: "Play pong",
@@ -91,6 +97,7 @@ export default {
         text:
           "You head up the stairs and you see your good friend Bill running over to say hi, but you realize he doesn't look happy. Suddenly, he pukes all over you and your precious clean pants.",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
             text: "Game Over",
@@ -103,6 +110,7 @@ export default {
         text:
           "You and Patty are killing it in pong, winning games left and right, but after beating Dustin Dirtypants and Trevor Tatteredpants they throw a beer at you and storm off. Your pants are covered in beer.",
         timed: true,
+        socAccImpact: -25,
         actions: [
           {
             text: "Chase after them",
@@ -119,6 +127,7 @@ export default {
         text:
           "You walk over to the kitchen to see what kind of food Patty has. Lots of people have brought things to the party to share including wings, chips and dip, and pizza.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Eat some pizza",
@@ -139,6 +148,7 @@ export default {
         text:
           "You run after the two angry that they ruined your outfit in front of Patty.",
         timed: true,
+        socAccImpact: 0,
         actions: [
           {
             text: "Yell at them",
@@ -155,6 +165,7 @@ export default {
         text:
           "You run into the house to clean off your pants, bumping into some wings along the way. The wings land all over the floor and all over you.",
         timed: false,
+        socAccImpact: -25,
         actions: [
           {
             text: "Clean off in the bathroom",
@@ -167,6 +178,7 @@ export default {
         text:
           "You grab a slice of pizza and sit down to eat. As you're eating you get some sauce on your hands. Eric your buddy comes past and notices you on the couch. He gives you a high five.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Wipe your hands on your pants",
@@ -179,6 +191,7 @@ export default {
         text:
           "You grab some wings and sit down to eat. As your eating you get some sauce on your hands. Eric your buddy comes past and notices you on the couch. He gives you a high five.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Wipe your hands on your pants",
@@ -191,6 +204,7 @@ export default {
         text:
           "You grab some chips and dip and sit down to eat. As you are eating you drop some dip on your pants. Eric your buddy comes past, 'Dude what happened to your pants, thats not how you get the ladies",
         timed: false,
+        socAccImpact: -25,
         actions: [
           {
             text: "Clean up in the bathroom",
@@ -203,6 +217,7 @@ export default {
         text:
           "You yell at the guys and they turn around and push you into the dirt. Everyone arounds stands around and ridicules you for having dirt covered pants.",
         timed: false,
+        socAccImpact: -25,
         actions: [
           {
             text: "Clean up in the bathroom",
@@ -215,6 +230,7 @@ export default {
         text:
           "You push Dustin and he falls onto the ground in shock. Everyone around you cheers as Dustin and Trevor run out of the party in embarassment.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Clean up in the bathroom",
@@ -227,6 +243,7 @@ export default {
         text:
           "You find the bathroom and attempt to clean off your pants as best you can. You make a little progress and hope Patty and everyone else won't notice.",
         timed: false,
+        socAccImpact: 25,
         actions: [
           {
             text: "Go back to the party",
@@ -239,6 +256,7 @@ export default {
         text:
           "You realize that you now have food all of your precious pants and decide you better clean up in the bathroom",
         timed: false,
+        socAccImpact: -25,
         actions: [
           {
             text: "Clean up in the bathroom",
@@ -251,13 +269,14 @@ export default {
         text:
           "As you leave the bathroom Patty comes up to you. 'Are you okay?'",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Its no big deal",
             goToNode: 22
           },
           {
-            text: "No, look what they did to my pants",
+            text: "No, look what they did to my pants!",
             goToNode: 23
           }
         ]
@@ -267,6 +286,7 @@ export default {
         text:
           "As you leave the bathroom Patty comes up to you. 'That was amazing those guys were jerks and did you see their pants?'",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Make fun of their pants",
@@ -283,6 +303,7 @@ export default {
         text:
           "Eric comes to meet you after you leave the bathroom. 'Let's do some shots man!'",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Take some shots",
@@ -295,6 +316,7 @@ export default {
         text:
           "'Its no big deal I hope they didn't ruin your party.' Patty replies, 'Absolutely not, why don't we get a drink?'",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Get a beer from the keg",
@@ -311,6 +333,7 @@ export default {
         text:
           "'They don't look that bad, at least they are better then those other guys! Why don't we get a drink?'",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Get a beer from the keg",
@@ -327,6 +350,7 @@ export default {
         text:
           "'Yeah they had the worst pants I have ever seen!' Patty replies, 'I know, I have a great idea to celebrate them leaving'",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Keg stand",
@@ -339,6 +363,7 @@ export default {
         text:
           "'I'm really sorry about the fight Patty, I hope it didn't ruin the party.' Patty replies, 'Absolutely not! I actually have a great idea to celebrate them leaving'",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Keg stand",
@@ -351,6 +376,7 @@ export default {
         text:
           "You and Eric take three shots. 'Wow I feel awesome lets do some more!,' says Eric.",
         timed: true,
+        socAccImpact: 0,
         actions: [
           {
             text: "Take more shots",
@@ -367,6 +393,7 @@ export default {
         text:
           "You grab a beer from the keg and go sit down with Patty to talk.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Talk with Patty",
@@ -379,6 +406,7 @@ export default {
         text:
           "You start to pour out your mixed drink and you spill slightly on your pants. You shrug it off and go sit down with Patty.",
         timed: false,
+        socAccImpact: -10,
         actions: [
           {
             text: "Talk with Patty",
@@ -391,6 +419,7 @@ export default {
         text:
           "Everyone around you starts to cheer as two people lift you up to do a keg stand. You drink a lot and as they set you down you puke all over yourself and several other people. Your pants are ruined and you run home in shame.",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
             text: "Game Over",
@@ -403,6 +432,7 @@ export default {
         text:
           "You take more shots and start to feel nauseous and uneasy. Your friend Eric urges you to take more shots.",
         timed: true,
+        socAccImpact: 0,
         actions: [
           {
             text: "Take more shots",
@@ -419,6 +449,7 @@ export default {
         text:
           "You and Eric find some other people in the back of the house and start to dance and talk.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Continue dancing",
@@ -431,6 +462,7 @@ export default {
         text:
           "You and Patty finish your drinks and realize its almost 3am. You thank her for inviting you over and go outside to wait for your uber home.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Go home",
@@ -443,6 +475,7 @@ export default {
         text:
           "You and Eric take three more shots. You feel very sick and run to the bathroom, but you don't make it and puke on your pants. They are ruined and you leave the party in shame with your dirty pants.",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
             text: "Game Over",
@@ -455,6 +488,7 @@ export default {
         text:
           "You realize you are not feeling well. You find Patty and tell her you are leaving and then go wait for your uber.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Go home",
@@ -467,6 +501,7 @@ export default {
         text:
           "You and Eric keep dancing and have a great night. You realize it is now late and say goodbye to everyone and go to wait for your uber.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Go home",
@@ -479,6 +514,7 @@ export default {
         text:
           "You made it home safely and while your pantaloons might not be the cleanest you got the job done.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Advance to level 2",
