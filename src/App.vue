@@ -26,8 +26,8 @@ export default {
   data() {
     return {
       levels: [],
-      levelId: 1,
-      nodeId: 1
+      levelId: 2,
+      nodeId: 48
     };
   },
   computed: {

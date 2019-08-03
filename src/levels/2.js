@@ -1,6 +1,6 @@
 export default {
   level: {
-    id: 1,
+    id: 2,
     nodes: [
       {
         id: 1,
@@ -397,11 +397,11 @@ export default {
         actions: [
           {
             text: "Let's crank the windows down and the music up",
-            goToNode: 4
+            goToNode: 37
           },
           {
             text: "Let's put the air on and have a nice relaxing drive",
-            goToNode: 4
+            goToNode: 38
           }
         ]
       },
