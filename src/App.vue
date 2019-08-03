@@ -1,10 +1,20 @@
 <template>
   <div id="app">
     <BackgroundImage :levelId="levelId" :image="node.image">
-      <p>Level {{levelId}}</p>
-      <p>Node {{nodeId}}</p>
-      <p>{{node}}</p>
+      <h1>Level {{levelId}}</h1>
+      <h1>Node {{nodeId}}</h1>
     </BackgroundImage>
+    <v-bottom-sheet v-model="sheet" inset hide-overlay>
+      <v-sheet class="text-center" height="200px">
+        <h1>{{node.text}}</h1>
+        <br>
+        <v-btn
+          v-for="(action, index) in node.actions"
+          :key="index"
+          @click="goTo(action.goToLevel, action.goToNode)"
+        >{{action.text}}</v-btn>
+      </v-sheet>
+    </v-bottom-sheet>
   </div>
 </template>
 
@@ -19,6 +29,7 @@ export default {
   },
   data() {
     return {
+      sheet: true,
       levels: [],
       levelId: 1,
       nodeId: 1
@@ -36,6 +47,12 @@ export default {
   created() {
     this.levels.push(level1.level);
     this.levels.push(level2.level);
+  },
+  methods: {
+    goTo(levelId, nodeId) {
+      if (levelId) this.levelId = levelId;
+      if (nodeId) this.nodeId = nodeId;
+    }
   }
 };
 </script>
