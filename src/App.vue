@@ -19,7 +19,7 @@
           </v-flex>
         </v-layout>
       </v-container>
-      <BackgroundImage :levelId="levelId" :image="node.image"></BackgroundImage>
+      <BackgroundImage :levelId="levelId" :nodeId="nodeId" :image="node.image"></BackgroundImage>
       <Controls :node="node" @goTo="goTo"></Controls>
     </v-content>
   </v-app>
