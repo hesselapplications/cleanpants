@@ -1,11 +1,12 @@
 <template>
-  <v-img id="image" :src="require('@/assets/levels/' + levelId + '/' + image)"></v-img>
+  <v-img id="image" :src="require('@/assets/levels/' + levelId + '/' + nodeId + '.png')"></v-img>
 </template>
 
 <script>
 export default {
   props: {
     levelId: Number,
+    nodeId: Number,
     image: String
   }
 };

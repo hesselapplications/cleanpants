@@ -1,13 +1,13 @@
 export default {
   level: {
-    id: 1,
+    id: 2,
     nodes: [
       {
         id: 1,
         text:
-          "Hello, welcome to level 2! Ready to go on a first date????You are meeting the girl of your dreams tonight at your local fancy restaraunt - Beau Pantalon.But you have only one pair of clean pants!!!! Make sure to keep your pants clean as you head to your date!",
-        image: "pants.png",
+          "Hello, welcome to level 2! Ready to go on a first date? You are meeting the girl of your dreams tonight at your local fancy restaraunt - Beau Pantalon. But you have only one pair of clean pants!!!! Make sure to keep your pants clean as you head to your date!",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Start Level 2",
@@ -19,15 +19,16 @@ export default {
         id: 2,
         text:
           "As you head for the door you realize you forgot to take out the garbage earlier today. You don't want your date to think you are some sort of slob so you better do it now. How will you proceed?",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Double bag it and drag it.",
             goToNode: 4
           },
           {
-            text: "Single bag and two hand carry it for support ",
+            text:
+              "Single bag and two hand carry it close to your body for support ",
             goToNode: 3
           }
         ]
@@ -36,8 +37,8 @@ export default {
         id: 3,
         text:
           "You got the bag to the trash safely but now your hands are dirty",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Better wipe them on your pants",
@@ -53,8 +54,8 @@ export default {
         id: 4,
         text:
           "As you drag the bag it still tears on the ground because you bought the cheap garbage bags. Now you have garbage all over your driveway!",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Risk going into the messy garage to grab a broom",
@@ -70,8 +71,8 @@ export default {
         id: 5,
         text:
           "You bend down to pick up the trash by hand and you are met with success! Your driveway is completely clean except for one stray can at the end. Do you ignore it and go wash your hands?",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Ignore it, it's only one can",
@@ -88,8 +89,8 @@ export default {
         id: 6,
         text:
           "As you head into the garage you see the broom way in the back. It looks like a treacherous trail to get there - lots of paint cans and greasy tools to get your pants dirty on. Are you sure you want to do this?",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Bail out, I can pick up the garbage by hand.",
@@ -104,9 +105,9 @@ export default {
       {
         id: 7,
         text:
-          "That's right, it's just one can, who cares???? You turn to go wash your hands inside when a car full of environmental protectionists see's what you have done! Appalled, they shout out \"For Mother Earth\" and start hurdling organic tomatoes at you!",
-        image: "pants.png",
+          "That's right, it's just one can, who cares? You turn to go wash your hands inside when a car full of environmental protectionists see's what you have done! Appalled, they shout out \"For Mother Earth\" and start hurdling organic tomatoes at you!",
         timed: true,
+        socAccImpact: 0,
         actions: [
           {
             text:
@@ -123,8 +124,8 @@ export default {
         id: 8,
         text:
           "You recall all the geometry and physics lessons from your younger years and decide the best way to get to the broom is by either running at a full sprint and trying to hurdle the messy tools and paint cans or by creeping carefully through the debris to the broom.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Throw caution to the wind and jump",
@@ -141,8 +142,8 @@ export default {
         id: 9,
         text:
           "You hit the lawn, and the lawn hits back. Hard. There is a 9 inch skid mark on your left thigh from the impact. Accidents happen though right?",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -25,
         actions: [
           {
             text: "Head back inside to wash your hands from the garbage",
@@ -159,8 +160,8 @@ export default {
         id: 10,
         text:
           "You crash into the garage and dodge the dirty paint cans and tools in your path. By the time you stop running you find yourself at the back of the garage",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Wait for the attackers to leave.",
@@ -175,8 +176,8 @@ export default {
       {
         id: 11,
         text: "Okay seriously... you have to get to this date...",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Start making your way back out. ",
@@ -188,8 +189,8 @@ export default {
         id: 12,
         text:
           "You look back on the path of paint cans and greasy tools, uncertain on how to get back out.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Throw caution to the wind and jump",
@@ -206,8 +207,8 @@ export default {
         id: 13,
         text:
           "You run and throw yourself into the air towards the front of the garage and successfully make it over the debris. And make it to safety",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Pat yourself on the back and continue with your day",
@@ -219,8 +220,8 @@ export default {
         id: 14,
         text:
           "You run and throw yourself into the air towards the back of the garage and land short of your mark getting a small grease stain on the cuff of your pants",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -10,
         actions: [
           {
             text: "Sigh in defeat and continue on with your day",
@@ -232,8 +233,8 @@ export default {
         id: 15,
         text:
           "You creep carefully through the obstacles to the back of the garage and, due to your skilled footing, make it to the broom safe and sound.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Fist pump in victory and continue with your day",
@@ -245,8 +246,8 @@ export default {
         id: 16,
         text:
           "You creep carefully through the paint cans and tools back to the front of the garage, losing focus at the last second you get a small paint stain on the ankle of your pants.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -10,
         actions: [
           {
             text:
@@ -259,8 +260,8 @@ export default {
         id: 17,
         text:
           "With the broom in hand you now clean up the driveway effectively and efficiently.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "That was easy! I better go wash my hands before I go.",
@@ -271,8 +272,8 @@ export default {
       {
         id: 18,
         text: "You grab the broom.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Okay, let's get back out of here",
@@ -288,8 +289,8 @@ export default {
         id: 19,
         text:
           "You head to the kitchen sink to wash your hands... and then you arrive at the sink.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Wash hands.",
@@ -305,8 +306,8 @@ export default {
         id: 20,
         text:
           "As you start to wash your hands you lift the novel and get sprayed by the sprayer next to teh faucet. You realized too late that some trickster put a rubber band around it. Ugh. Your pants are now soaked.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -25,
         actions: [
           {
             text: "It'll dry, move on with your day.",
@@ -322,8 +323,8 @@ export default {
         id: 21,
         text:
           "As you stop for a second to take a look around you notice a rubber band around the spray nozzle, you take it off and proceed to wash your hands.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text:
@@ -335,8 +336,8 @@ export default {
       {
         id: 22,
         text: "It's just water, it'll dry by the time I get there... ",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Time to leave for my date! I'll just walk out to the car",
@@ -348,8 +349,8 @@ export default {
         id: 23,
         text:
           "You run to the bathroom and use a blow dryer to dry your pants successfully. But now you're late! ",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 10,
         actions: [
           {
             text: "Run to the car to leave",
@@ -366,8 +367,8 @@ export default {
         id: 24,
         text:
           "You sprint to the car and accidentally brush against the side of a wet counter top (The blow dryer was all for nothing!). Irked, you continue you mad dash to the car.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -10,
         actions: [
           {
             text: "Continue running",
@@ -379,8 +380,8 @@ export default {
         id: 25,
         text:
           "That's right, the pants are the most important thing, you can afford to walk and be safe. ",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Continue walking to the car",
@@ -392,28 +393,28 @@ export default {
         id: 26,
         text:
           "You arrive at the car and get the engine running. Time to head out for your date.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Let's crank the windows down and the music up",
-            goToNode: 4
+            goToNode: 37
           },
           {
             text: "Let's put the air on and have a nice relaxing drive",
-            goToNode: 4
+            goToNode: 38
           }
         ]
       },
       {
         id: 27,
         text:
-          "You wipe your hands on your pants... seriously you actually did that... ",
-        image: "pants.png",
+          "You wipe your hands on your pants... seriously you actually did that... Your pants are now dirty and smelly...",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
-            text: "Your pants are now dirty and smelly... Game Over",
+            text: "Game Over",
             goToNode: 1
           }
         ]
@@ -422,8 +423,8 @@ export default {
         id: 28,
         text:
           "You look back on the path of paint cans and greasy tools, uncertain on how to get back out.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Throw caution to the wind and jump",
@@ -440,8 +441,8 @@ export default {
         id: 29,
         text:
           "You run and throw yourself into the air towards the front of the garage and successfully make it over the debris. And make it to safety",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Pat yourself on the back and continue with your day",
@@ -453,8 +454,8 @@ export default {
         id: 30,
         text:
           "You creep carefully through the paint cans and tools back to the front of the garage, losing focus at the last second you get a small paint stain on the ankle of your pants.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -10,
         actions: [
           {
             text:
@@ -467,8 +468,8 @@ export default {
         id: 31,
         text:
           "Reaching down, you notice that the can is full of all kinds of slimey-pants-dirtying water...",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "... Keep reaching for the can ... ",
@@ -485,8 +486,8 @@ export default {
         id: 32,
         text:
           "Your hand grips the can - which is slimey and treacherous for carrying...",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text:
@@ -503,8 +504,8 @@ export default {
         id: 33,
         text:
           "You lift the can into the air and immedietly feel the urge to sneeze.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Throw can on ground and sneeze.",
@@ -520,8 +521,8 @@ export default {
         id: 34,
         text:
           "You toss the can on the ground just as you sneeze, avoiding catastrophe",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Pick up the can and throw it away",
@@ -537,8 +538,8 @@ export default {
         id: 35,
         text:
           "You sneeze... the can slips from your hands and ruins your only pair of clean pants.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
             text: "Game Over",
@@ -550,8 +551,8 @@ export default {
         id: 36,
         text:
           "You grab the can and gently carry it to the garbage. Successfully saving the planet one can at the time.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Time to head inside and clean my hands",
@@ -563,8 +564,8 @@ export default {
         id: 37,
         text:
           "You crank the windows down and head to Beau Pantalon, it's a beautiful drive, until a pidgeon flying overhead lands a well directed flying turd onto your one pair of clean pants.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -25,
         actions: [
           {
             text:
@@ -577,8 +578,8 @@ export default {
         id: 38,
         text:
           "Your drive to Beau Pantalon is uneventful - which is good in this game.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Park",
@@ -590,8 +591,8 @@ export default {
         id: 39,
         text:
           "You park your car, nervous energy building up inside of you. You enter Beau Pantalon. The girl of your dreams is now in the same building as you. All you have to do is get to your table.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text:
@@ -607,8 +608,8 @@ export default {
       {
         id: 40,
         text: "You walk into the bathroom and take a look at your pants....",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text:
@@ -621,8 +622,8 @@ export default {
         id: 41,
         text:
           "You start heading for the table. Just then a waiter comes around the corner with a tray of food. You surprise him just as much as he surprised your and the tray starts to slip.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Dodge Left",
@@ -638,8 +639,8 @@ export default {
         id: 42,
         text:
           'Just then a person barges into the bathroom, clearly feeling ill. He mumbles "... don\'t eat the garlic bread sticks..." and proceeds to vomit in your directions',
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Dodge left",
@@ -655,8 +656,8 @@ export default {
         id: 43,
         text:
           "You dodge left... so does the tray... it covers your only clean pair of pants with spaghetti sauce and smears of garlic butter from the breadsticks",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
             text: "Time to go home... Game Over",
@@ -668,8 +669,8 @@ export default {
         id: 44,
         text:
           "You dodge right... and narrowly miss getting dumped on by all sorts of assorted messy dishes",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Continue forward!",
@@ -684,8 +685,8 @@ export default {
       {
         id: 45,
         text: "You dodge left, and miss getting puked on. That was close!",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Let's get out of the bathroom and go see this girl!",
@@ -697,8 +698,8 @@ export default {
         id: 46,
         text:
           "You dodge right, and proceed to get spayed with unspeakable things - mainly garlicy smelling... your pants are ruined... ",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
             text:
@@ -711,8 +712,8 @@ export default {
         id: 47,
         text:
           'You bend down to help the waiter up, as you do so he says "no no... I would not ask someone who clearly wants to keep their pants so clean to help a lowly normal and dirty pants person such as myself"',
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Follow is advice and keep heading to your dream girl.",
@@ -728,8 +729,8 @@ export default {
         id: 48,
         text:
           "You see her now... she is pure perfection. She's not a dress wearing girl... no no, she is wearing pants... and they are perfectly clean.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text:
@@ -747,8 +748,8 @@ export default {
         id: 49,
         text:
           "You help the waiter up, putting your pants in peril... but nothing bad comes of it and the waiter thanks you profusely! He even shows you how to clean one small stain off your pants!",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 10,
         actions: [
           {
             text: "Keep heading to your dream girl!",
@@ -759,9 +760,9 @@ export default {
       {
         id: 50,
         text:
-          "She accepts your compliment and blushes a little, as you sit down though... you realize you've made a grave mistake... not grave... gravey - you sat in a misplaced gravy bowl... ruining your pants",
-        image: "pants.png",
+          "She accepts your compliment and blushes a little, as you sit down though... you realize you've made a grave mistake... not grave... gravy - you sat in a misplaced gravy bowl... ruining your pants",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
             text: "Game over",
@@ -772,9 +773,9 @@ export default {
       {
         id: 51,
         text:
-          "You check your seat for anything. Lucky you did, too, because you find as misplaced gravey bowl sitting there... you move it aside and sit down. She is very impressed by the way you take care of your pants.",
-        image: "pants.png",
+          "You check your seat for anything. Lucky you did, too, because you find as misplaced gravy bowl sitting there... you move it aside and sit down. She is very impressed by the way you take care of your pants.",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Continue with your date",
@@ -785,8 +786,8 @@ export default {
       {
         id: 52,
         text: "The main course arrives",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Place the napin on your lap.",
@@ -803,8 +804,8 @@ export default {
         id: 53,
         text:
           "10 minutes into the main course a stray noodle flys from your plate onto the leg that doesn't have a napkin",
-        image: "pants.png",
         timed: false,
+        socAccImpact: -20,
         actions: [
           {
             text: "Ugh, I should have made a better barrier with my napkin",
@@ -816,8 +817,8 @@ export default {
         id: 54,
         text:
           "Your napkin barrier lives up to the challenge and prevents all sorts of food items from reaching your pants.",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text:
@@ -830,8 +831,8 @@ export default {
         id: 55,
         text:
           "The rest of the date goes smoothly... But now its time for the kiss goodnight. As she leans in to kiss you, you notice that she still has a little chocolate on her finger from the dessert!",
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Push her out of the way! Don't let her near your pants.",
@@ -848,8 +849,8 @@ export default {
         id: 56,
         text:
           'She stumbles from the force of your push, but does not fall... Her eye\'s lock onto your, but they aren\'t angry, they are dancing with excitment! "I was testing you!" she says, "And you have passed, you are master at keeping your only one pair of pants clean!',
-        image: "pants.png",
         timed: false,
+        socAccImpact: 0,
         actions: [
           {
             text: "Congrats! Level Complete!",
@@ -861,8 +862,8 @@ export default {
         id: 57,
         text:
           'She steps back from the kiss, a little disgusted... "I can\'t believe you let me do that to your pants" she says, " you clearly don\'t care about keeping your one and only pair of pants clean',
-        image: "pants.png",
         timed: false,
+        socAccImpact: -100,
         actions: [
           {
             text: "Game Over",
