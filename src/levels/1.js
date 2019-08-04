@@ -243,7 +243,7 @@ export default {
         text:
           "You find the bathroom and attempt to clean off your pants as best you can. You make a little progress and hope Patty and everyone else won't notice.",
         timed: false,
-        socAccImpact: 25,
+        socAccImpact: 10,
         actions: [
           {
             text: "Go back to the party",
@@ -269,7 +269,7 @@ export default {
         text:
           "As you leave the bathroom Patty comes up to you. 'Are you okay?'",
         timed: false,
-        socAccImpact: 0,
+        socAccImpact: 10,
         actions: [
           {
             text: "Its no big deal",
