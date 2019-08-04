@@ -5,7 +5,7 @@ export default {
       {
         id: 1,
         text:
-          "Hello, welcome to level 2! Ready to go on a first date????You are meeting the girl of your dreams tonight at your local fancy restaraunt - Beau Pantalon.But you have only one pair of clean pants!!!! Make sure to keep your pants clean as you head to your date!",
+          "Hello, welcome to level 2! Ready to go on a first date???? You are meeting the girl of your dreams tonight at your local fancy restaraunt - Beau Pantalon. But you have only one pair of clean pants!!!! Make sure to keep your pants clean as you head to your date!",
         timed: false,
         actions: [
           {

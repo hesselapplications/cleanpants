@@ -13,8 +13,7 @@ export default {
 </script>
 <style>
 #image {
-  height: 100%;
-  width: 100%;
+  height: 500px;
 }
 </style>
 

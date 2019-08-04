@@ -3,9 +3,9 @@
     <v-app-bar color="primary" dark fixed app>
       <v-toolbar-title>One Pair of Clean Pants</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-title>Level {{levelId}}, Node {{nodeId}}</v-toolbar-title>
+      <v-toolbar-title>Level {{levelId}}</v-toolbar-title>
     </v-app-bar>
-    <v-content>
+    <v-content class="white">
       <BackgroundImage :levelId="levelId" :nodeId="nodeId" :image="node.image"></BackgroundImage>
       <Controls :node="node" @goTo="goTo"></Controls>
     </v-content>
