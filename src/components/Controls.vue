@@ -76,8 +76,8 @@ export default {
           self.randomSelection = index;
 
           self.timeout = setTimeout(() => {
-            self.$refs[index][0].$el.click();
             self.randomSelection = null;
+            self.$refs[index][0].$el.click();
           }, 1000);
         }, 4000);
       }
