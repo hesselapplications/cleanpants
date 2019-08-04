@@ -15,7 +15,7 @@
             <v-progress-linear color="light-blue" height="50" :value="socAccBar" striped></v-progress-linear>
           </v-flex>
           <v-flex xs2>
-            <v-img :src="require('@/assets/levels/1/pants.png')" height="50"></v-img>
+            <v-img :src="require('@/assets/status/'+pantsImage)" height="50"></v-img>
           </v-flex>
         </v-layout>
       </v-container>
@@ -41,7 +41,8 @@ export default {
       levels: [],
       levelId: 1,
       nodeId: 1,
-      socAccBar: 100
+      socAccBar: 100,
+      pantsImage: "Clean.png"
     };
   },
   watch: {
@@ -49,8 +50,29 @@ export default {
       this.socAccBar = 100;
     },
     nodeId: function() {
-      console.log(this.node.socAccImpact);
       this.socAccBar += this.node.socAccImpact;
+    },
+    socAccBar: function() {
+      console.log(this.socAccBar);
+      switch (true) {
+        case this.socAccBar > 75:
+          console.log(this.socAccBar);
+          this.pantsImage = "Clean.png";
+          break;
+        case this.socAccBar <= 75 && this.socAccBar > 50:
+          this.pantsImage = "KindaDirty.png";
+          break;
+        case this.socAccBar <= 50 && this.socAccBar > 25:
+          this.pantsImage = "MoreDirty.png";
+          break;
+        case this.socAccBar <= 25 && this.socAccBar > 0:
+          this.pantsImage = "Dirty.png";
+          break;
+        case this.socAccBar == 0:
+          this.pantsImage = "Dirty.png";
+          break;
+        default:
+      }
     }
   },
   computed: {
