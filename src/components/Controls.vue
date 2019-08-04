@@ -7,7 +7,7 @@
           :text="node.text"
           @completed="completed"
           :repeat="0"
-          :typeDelay="40"
+          :typeDelay="35"
         ></vue-typer>
       </v-card-text>
       <v-expand-transition>
@@ -64,6 +64,7 @@ export default {
       this.timer = 0;
     },
     completed() {
+      this.$emit("doneTyping");
       this.typing = false;
       if (this.node.timed) {
         this.timer = 100;

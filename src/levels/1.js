@@ -1,28 +1,22 @@
 export default {
   level: {
     id: 1,
-    nodes: [
-      {
+    nodes: [{
         id: 1,
-        text:
-          "It's a friday night and you know what that means. It's time to go out to Patty Nicepants house party. As you are getting ready you realize, you only have one clean pair of pants!",
+        text: "It's a friday night and you know what that means. It's time to go out to Patty Nicepants house party. As you are getting ready you realize, you only have one clean pair of pants!",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Get Ready",
-            goToNode: 2
-          }
-        ]
+        actions: [{
+          text: "Get Ready",
+          goToNode: 2
+        }]
       },
       {
         id: 2,
-        text:
-          "Your Uber is on the way do you want to be the lame guy in the corner or the life of the party?",
+        text: "Your Uber is on the way do you want to be the lame guy in the corner or the life of the party?",
         socAccImpact: 0,
         timed: true,
-        actions: [
-          {
+        actions: [{
             text: "Take a shot or two while you wait",
             goToNode: 3
           },
@@ -34,38 +28,30 @@ export default {
       },
       {
         id: 3,
-        text:
-          "You decide to take two shots of vodka before you head out, but you realize your uber is waiting. You run out to catch your ride and trip on the curb like a clutz.",
+        text: "You decide to take two shots of vodka before you head out, but you realize your uber is waiting. You run out to catch your ride and trip on the curb like a clutz.",
         timed: false,
         socAccImpact: -25,
-        actions: [
-          {
-            text: "Arrive at the party",
-            goToNode: 5
-          }
-        ]
+        actions: [{
+          text: "Arrive at the party",
+          goToNode: 5
+        }]
       },
       {
         id: 4,
-        text:
-          "You head out front of your apartment and wait for Tim your uber driver. He pulls up shortly. As you get in he says, 'Damn, those are some clean pants'.",
+        text: "You head out front of your apartment and wait for Tim your uber driver. He pulls up shortly. As you get in he says, 'Damn, those are some clean pants'.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Arrive at the party",
-            goToNode: 5
-          }
-        ]
+        actions: [{
+          text: "Arrive at the party",
+          goToNode: 5
+        }]
       },
       {
         id: 5,
-        text:
-          "You pull up to to Patty Nicepants house and realize the party has been going on for awhile. You hear lots of laughter from the back, but there is also a bunch of people on the front porch.",
+        text: "You pull up to to Patty Nicepants house and realize the party has been going on for awhile. You hear lots of laughter from the back, but there is also a bunch of people on the front porch.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Go out back",
             goToNode: 6
           },
@@ -77,12 +63,10 @@ export default {
       },
       {
         id: 6,
-        text:
-          "You head out back and see Patty. She starts eyeing up your clean pants and comes over. 'Hey do you want to play some beer pong with me?'",
+        text: "You head out back and see Patty. She starts eyeing up your clean pants and comes over. 'Hey do you want to play some beer pong with me?'",
         timed: true,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Play pong",
             goToNode: 8
           },
@@ -94,25 +78,17 @@ export default {
       },
       {
         id: 7,
-        text:
-          "You head up the stairs and you see your good friend Bill running over to say hi, but you realize he doesn't look happy. Suddenly, he pukes all over you and your precious clean pants.",
+        text: "You head up the stairs and you see your good friend Bill running over to say hi, but you realize he doesn't look happy. Suddenly, he pukes all over you and your precious clean pants.",
         timed: false,
         socAccImpact: -100,
-        actions: [
-          {
-            text: "Game Over",
-            goToNode: 1
-          }
-        ]
+        actions: []
       },
       {
         id: 8,
-        text:
-          "You and Patty are killing it in pong, winning games left and right, but after beating Dustin Dirtypants and Trevor Tatteredpants they throw a beer at you and storm off. Your pants are covered in beer.",
+        text: "You and Patty are killing it in pong, winning games left and right, but after beating Dustin Dirtypants and Trevor Tatteredpants they throw a beer at you and storm off. Your pants are covered in beer.",
         timed: true,
         socAccImpact: -25,
-        actions: [
-          {
+        actions: [{
             text: "Chase after them",
             goToNode: 10
           },
@@ -124,12 +100,10 @@ export default {
       },
       {
         id: 9,
-        text:
-          "You walk over to the kitchen to see what kind of food Patty has. Lots of people have brought things to the party to share including wings, chips and dip, and pizza.",
+        text: "You walk over to the kitchen to see what kind of food Patty has. Lots of people have brought things to the party to share including wings, chips and dip, and pizza.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Eat some pizza",
             goToNode: 12
           },
@@ -145,12 +119,10 @@ export default {
       },
       {
         id: 10,
-        text:
-          "You run after the two angry that they ruined your outfit in front of Patty.",
+        text: "You run after the two angry that they ruined your outfit in front of Patty.",
         timed: true,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Yell at them",
             goToNode: 15
           },
@@ -162,116 +134,90 @@ export default {
       },
       {
         id: 11,
-        text:
-          "You run into the house to clean off your pants, bumping into some wings along the way. The wings land all over the floor and all over you.",
+        text: "You run into the house to clean off your pants, bumping into some wings along the way. The wings land all over the floor and all over you.",
         timed: false,
         socAccImpact: -25,
-        actions: [
-          {
-            text: "Clean off in the bathroom",
-            goToNode: 17
-          }
-        ]
+        actions: [{
+          text: "Clean off in the bathroom",
+          goToNode: 17
+        }]
       },
       {
         id: 12,
-        text:
-          "You grab a slice of pizza and sit down to eat. As you're eating you get some sauce on your hands. Eric your buddy comes past and notices you on the couch. He gives you a high five.",
+        text: "You grab a slice of pizza and sit down to eat. As you're eating you get some sauce on your hands. Eric your buddy comes past and notices you on the couch. He gives you a high five.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Wipe your hands on your pants",
-            goToNode: 18
-          }
-        ]
+        actions: [{
+          text: "Wipe your hands on your pants",
+          goToNode: 18
+        }]
       },
       {
         id: 13,
-        text:
-          "You grab some wings and sit down to eat. As your eating you get some sauce on your hands. Eric your buddy comes past and notices you on the couch. He gives you a high five.",
+        text: "You grab some wings and sit down to eat. As your eating you get some sauce on your hands. Eric your buddy comes past and notices you on the couch. He gives you a high five.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Wipe your hands on your pants",
-            goToNode: 18
-          }
-        ]
+        actions: [{
+          text: "Wipe your hands on your pants",
+          goToNode: 18
+        }]
       },
       {
         id: 14,
-        text:
-          "You grab some chips and dip and sit down to eat. As you are eating you drop some dip on your pants. Eric your buddy comes past, 'Dude what happened to your pants, thats not how you get the ladies",
+        text: "You grab some chips and dip and sit down to eat. As you are eating you drop some dip on your pants. Eric your buddy comes past, 'Dude what happened to your pants, thats not how you get the ladies",
         timed: false,
         socAccImpact: -25,
-        actions: [
-          {
-            text: "Clean up in the bathroom",
-            goToNode: 17
-          }
-        ]
+        actions: [{
+          text: "Clean up in the bathroom",
+          goToNode: 17
+        }]
       },
       {
         id: 15,
-        text:
-          "You yell at the guys and they turn around and push you into the dirt. Everyone arounds stands around and ridicules you for having dirt covered pants.",
+        text: "You yell at the guys and they turn around and push you into the dirt. Everyone arounds stands around and ridicules you for having dirt covered pants.",
         timed: false,
         socAccImpact: -25,
-        actions: [
-          {
-            text: "Clean up in the bathroom",
-            goToNode: 19
-          }
-        ]
+        actions: [{
+          text: "Clean up in the bathroom",
+          goToNode: 19
+        }]
       },
       {
         id: 16,
-        text:
-          "You push Dustin and he falls onto the ground in shock. Everyone around you cheers as Dustin and Trevor run out of the party in embarassment.",
+        text: "You push Dustin and he falls onto the ground in shock. Everyone around you cheers as Dustin and Trevor run out of the party in embarassment.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Clean up in the bathroom",
-            goToNode: 20
-          }
-        ]
+        actions: [{
+          text: "Clean up in the bathroom",
+          goToNode: 20
+        }]
       },
       {
         id: 17,
-        text:
-          "You find the bathroom and attempt to clean off your pants as best you can. You make a little progress and hope Patty and everyone else won't notice.",
+        text: "You find the bathroom and attempt to clean off your pants as best you can. You make a little progress and hope Patty and everyone else won't notice.",
         timed: false,
-        socAccImpact: 25,
-        actions: [
-          {
-            text: "Go back to the party",
-            goToNode: 21
-          }
-        ]
+        socAccImpact: 10,
+        actions: [{
+          text: "Go back to the party",
+          goToNode: 21
+        }]
       },
       {
         id: 18,
-        text:
-          "You realize that you now have food all of your precious pants and decide you better clean up in the bathroom",
+        text: "You realize that you now have food all of your precious pants and decide you better clean up in the bathroom",
         timed: false,
         socAccImpact: -25,
-        actions: [
-          {
-            text: "Clean up in the bathroom",
-            goToNode: 17
-          }
-        ]
+        actions: [{
+          text: "Clean up in the bathroom",
+          goToNode: 17
+        }]
       },
       {
         id: 19,
-        text:
-          "As you leave the bathroom Patty comes up to you. 'Are you okay?'",
+        text: "As you leave the bathroom Patty comes up to you. 'Are you okay?'",
         timed: false,
-        socAccImpact: 0,
-        actions: [
-          {
+        socAccImpact: 10,
+        actions: [{
             text: "Its no big deal",
             goToNode: 22
           },
@@ -283,12 +229,10 @@ export default {
       },
       {
         id: 20,
-        text:
-          "As you leave the bathroom Patty comes up to you. 'That was amazing those guys were jerks and did you see their pants?'",
+        text: "As you leave the bathroom Patty comes up to you. 'That was amazing those guys were jerks and did you see their pants?'",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Make fun of their pants",
             goToNode: 24
           },
@@ -300,25 +244,20 @@ export default {
       },
       {
         id: 21,
-        text:
-          "Eric comes to meet you after you leave the bathroom. 'Let's do some shots man!'",
+        text: "Eric comes to meet you after you leave the bathroom. 'Let's do some shots man!'",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Take some shots",
-            goToNode: 26
-          }
-        ]
+        actions: [{
+          text: "Take some shots",
+          goToNode: 26
+        }]
       },
       {
         id: 22,
-        text:
-          "'Its no big deal I hope they didn't ruin your party.' Patty replies, 'Absolutely not, why don't we get a drink?'",
+        text: "'Its no big deal I hope they didn't ruin your party.' Patty replies, 'Absolutely not, why don't we get a drink?'",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Get a beer from the keg",
             goToNode: 27
           },
@@ -330,12 +269,10 @@ export default {
       },
       {
         id: 23,
-        text:
-          "'They don't look that bad, at least they are better then those other guys! Why don't we get a drink?'",
+        text: "'They don't look that bad, at least they are better then those other guys! Why don't we get a drink?'",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Get a beer from the keg",
             goToNode: 27
           },
@@ -347,38 +284,30 @@ export default {
       },
       {
         id: 24,
-        text:
-          "'Yeah they had the worst pants I have ever seen!' Patty replies, 'I know, I have a great idea to celebrate them leaving'",
+        text: "'Yeah they had the worst pants I have ever seen!' Patty replies, 'I know, I have a great idea to celebrate them leaving'",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Keg stand",
-            goToNode: 29
-          }
-        ]
+        actions: [{
+          text: "Keg stand",
+          goToNode: 29
+        }]
       },
       {
         id: 25,
-        text:
-          "'I'm really sorry about the fight Patty, I hope it didn't ruin the party.' Patty replies, 'Absolutely not! I actually have a great idea to celebrate them leaving'",
+        text: "'I'm really sorry about the fight Patty, I hope it didn't ruin the party.' Patty replies, 'Absolutely not! I actually have a great idea to celebrate them leaving'",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Keg stand",
-            goToNode: 29
-          }
-        ]
+        actions: [{
+          text: "Keg stand",
+          goToNode: 29
+        }]
       },
       {
         id: 26,
-        text:
-          "You and Eric take three shots. 'Wow I feel awesome lets do some more!,' says Eric.",
+        text: "You and Eric take three shots. 'Wow I feel awesome lets do some more!,' says Eric.",
         timed: true,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Take more shots",
             goToNode: 30
           },
@@ -390,51 +319,37 @@ export default {
       },
       {
         id: 27,
-        text:
-          "You grab a beer from the keg and go sit down with Patty to talk.",
+        text: "You grab a beer from the keg and go sit down with Patty to talk.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Talk with Patty",
-            goToNode: 32
-          }
-        ]
+        actions: [{
+          text: "Talk with Patty",
+          goToNode: 32
+        }]
       },
       {
         id: 28,
-        text:
-          "You start to pour out your mixed drink and you spill slightly on your pants. You shrug it off and go sit down with Patty.",
+        text: "You start to pour out your mixed drink and you spill slightly on your pants. You shrug it off and go sit down with Patty.",
         timed: false,
         socAccImpact: -10,
-        actions: [
-          {
-            text: "Talk with Patty",
-            goToNode: 32
-          }
-        ]
+        actions: [{
+          text: "Talk with Patty",
+          goToNode: 32
+        }]
       },
       {
         id: 29,
-        text:
-          "Everyone around you starts to cheer as two people lift you up to do a keg stand. You drink a lot and as they set you down you puke all over yourself and several other people. Your pants are ruined and you run home in shame.",
+        text: "Everyone around you starts to cheer as two people lift you up to do a keg stand. You drink a lot and as they set you down you puke all over yourself and several other people. Your pants are ruined and you run home in shame.",
         timed: false,
         socAccImpact: -100,
-        actions: [
-          {
-            text: "Game Over",
-            goToNode: 1
-          }
-        ]
+        actions: []
       },
       {
         id: 30,
-        text:
-          "You take more shots and start to feel nauseous and uneasy. Your friend Eric urges you to take more shots.",
+        text: "You take more shots and start to feel nauseous and uneasy. Your friend Eric urges you to take more shots.",
         timed: true,
         socAccImpact: 0,
-        actions: [
-          {
+        actions: [{
             text: "Take more shots",
             goToNode: 33
           },
@@ -446,82 +361,61 @@ export default {
       },
       {
         id: 31,
-        text:
-          "You and Eric find some other people in the back of the house and start to dance and talk.",
+        text: "You and Eric find some other people in the back of the house and start to dance and talk.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Continue dancing",
-            goToNode: 35
-          }
-        ]
+        actions: [{
+          text: "Continue dancing",
+          goToNode: 35
+        }]
       },
       {
         id: 32,
-        text:
-          "You and Patty finish your drinks and realize its almost 3am. You thank her for inviting you over and go outside to wait for your uber home.",
+        text: "You and Patty finish your drinks and realize its almost 3am. You thank her for inviting you over and go outside to wait for your uber home.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Go home",
-            goToNode: 36
-          }
-        ]
+        actions: [{
+          text: "Go home",
+          goToNode: 36
+        }]
       },
       {
         id: 33,
-        text:
-          "You and Eric take three more shots. You feel very sick and run to the bathroom, but you don't make it and puke on your pants. They are ruined and you leave the party in shame with your dirty pants.",
+        text: "You and Eric take three more shots. You feel very sick and run to the bathroom, but you don't make it and puke on your pants. They are ruined and you leave the party in shame with your dirty pants.",
         timed: false,
         socAccImpact: -100,
-        actions: [
-          {
-            text: "Game Over",
-            goToNode: 1
-          }
-        ]
+        actions: []
       },
       {
         id: 34,
-        text:
-          "You realize you are not feeling well. You find Patty and tell her you are leaving and then go wait for your uber.",
+        text: "You realize you are not feeling well. You find Patty and tell her you are leaving and then go wait for your uber.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Go home",
-            goToNode: 36
-          }
-        ]
+        actions: [{
+          text: "Go home",
+          goToNode: 36
+        }]
       },
       {
         id: 35,
-        text:
-          "You and Eric keep dancing and have a great night. You realize it is now late and say goodbye to everyone and go to wait for your uber.",
+        text: "You and Eric keep dancing and have a great night. You realize it is now late and say goodbye to everyone and go to wait for your uber.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Go home",
-            goToNode: 36
-          }
-        ]
+        actions: [{
+          text: "Go home",
+          goToNode: 36
+        }]
       },
       {
         id: 36,
-        text:
-          "You made it home safely and while your pantaloons might not be the cleanest you got the job done.",
+        text: "You made it home safely and while your pantaloons might not be the cleanest you got the job done.",
         timed: false,
         socAccImpact: 0,
-        actions: [
-          {
-            text: "Advance to level 2",
-            goToLevel: 2,
-            goToNode: 1
-          }
-        ]
+        actions: [{
+          text: "Advance to level 2",
+          goToLevel: 2,
+          goToNode: 1
+        }]
       }
     ]
   }
