@@ -341,10 +341,7 @@ export default {
         text: "You wipe your hands on your pants... seriously you actually did that... Your pants are now dirty and smelly...",
         timed: false,
         socAccImpact: -100,
-        actions: [{
-          text: "Game Over",
-          goToNode: 1
-        }]
+        actions: []
       },
       {
         id: 28,
@@ -685,7 +682,8 @@ export default {
         timed: false,
         socAccImpact: 0,
         actions: [{
-          text: "Congrats! Level Complete!",
+          text: "Congrats, You beat the game!!! Play again?",
+          goToLevel: 1,
           goToNode: 1
         }]
       },
