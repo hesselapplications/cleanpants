@@ -1,5 +1,9 @@
 <template>
-  <v-img id="image" :src="require('@/assets/levels/' + levelId + '/' + nodeId + '.png')"></v-img>
+  <v-layout align-center justify-center>
+    <v-flex shrink>
+      <img id="image" :src="require('@/assets/levels/' + levelId + '/' + nodeId + '.png')"/>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
@@ -12,9 +16,8 @@ export default {
 };
 </script>
 <style>
-#image {
-  height: 100%;
-  width: 100%;
+img {
+  height: 500px;
 }
 </style>
 
