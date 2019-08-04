@@ -68,8 +68,8 @@ export default {
         case this.socAccBar <= 25 && this.socAccBar > 0:
           this.pantsImage = "Dirty.png";
           break;
-        case this.socAccBar == 0:
-          this.pantsImage = "Dirty.png";
+        case this.socAccBar <= 0:
+          this.pantsImage = "Ruined.png";
           break;
         default:
       }
